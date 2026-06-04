@@ -17,13 +17,13 @@ export default function Header() {
     <Image
       src={logowolfmundial}
       alt="Logo Wolf Mundial"
-      width={100}
+      width={70}
       height={60}
       priority
     />
   </div>
 
-  <div className="flex justify-center ml-12 md:m-0">
+  <div className="flex justify-center">
     <Image
       src={logomundialhora}
       alt="Logo Campaña Mundial"
