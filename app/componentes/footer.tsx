@@ -9,7 +9,7 @@ export default function Footer() {
 
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <Image src={logowolf} width={100}></Image>
+          <Image src={logowolf} width={100} alt='foto'></Image>
         </div>
 
         {/* Redes */}
