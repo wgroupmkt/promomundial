@@ -34,7 +34,7 @@ export default function Faqs() {
   
 
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-16" id="faqs">
       <div className="mx-auto max-w-4xl px-6">
         <h2 className="mb-10 text-center text-4xl font-bold">
           Preguntas Frecuentes

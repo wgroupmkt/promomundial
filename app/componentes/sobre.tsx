@@ -1,10 +1,10 @@
 export default function CampaignMessage() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-16" id="sobre">
       <div className="mx-auto max-w-4xl px-6">
 
         {/* Descripción */}
-        <div className="mb-10 text-center">
+        <div className="mb-10 text-center" >
           <h2 className="mb-4 text-4xl font-bold">
             Nuestro Compromiso
           </h2>
