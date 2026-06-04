@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false)
@@ -11,33 +11,41 @@ export default function ContactForm() {
     mensaje: '',
   })
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault()
 
     setLoading(true)
 
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(form),
-    })
-
-    const data = await response.json()
-
-    if (data.success) {
-      alert('Mensaje enviado')
-      setForm({
-        nombre: '',
-        email: '',
-        mensaje: '',
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
       })
-    } else {
-      alert('Error al enviar')
-    }
 
-    setLoading(false)
+      const data = await response.json()
+
+      if (data.success) {
+        alert('Mensaje enviado')
+
+        setForm({
+          nombre: '',
+          email: '',
+          mensaje: '',
+        })
+      } else {
+        alert('Error al enviar')
+      }
+    } catch (error) {
+      console.error(error)
+      alert('Error al enviar')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -56,7 +64,9 @@ export default function ContactForm() {
             placeholder="Nombre"
             required
             value={form.nombre}
-            onChange={(e) =>
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement>
+            ) =>
               setForm({
                 ...form,
                 nombre: e.target.value,
@@ -70,7 +80,9 @@ export default function ContactForm() {
             placeholder="Correo"
             required
             value={form.email}
-            onChange={(e) =>
+            onChange={(
+              e: React.ChangeEvent<HTMLInputElement>
+            ) =>
               setForm({
                 ...form,
                 email: e.target.value,
@@ -84,7 +96,9 @@ export default function ContactForm() {
             placeholder="Mensaje"
             required
             value={form.mensaje}
-            onChange={(e) =>
+            onChange={(
+              e: React.ChangeEvent<HTMLTextAreaElement>
+            ) =>
               setForm({
                 ...form,
                 mensaje: e.target.value,
