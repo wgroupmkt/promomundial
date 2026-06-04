@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import flayer from '../../public/flayer.jpeg'
 
 const images = [
-  '/galeria/foto1.jpg',
-  '/galeria/foto2.jpg',
-  '/galeria/foto3.jpg',
-  '/galeria/foto4.jpg',
+  '/1.jpg',
+  '/2.jpg',
+  '/3.jpg',
+  '/4.jpg',
 ]
 
 export default function FlyerGallery() {
@@ -26,9 +27,9 @@ export default function FlyerGallery() {
       <div className="mx-auto flex flex-wrap justify-center gap-8 px-6">
 
         {/* Flyer */}
-        <div className="relative h-[600px] w-[400px] overflow-hidden rounded-3xl shadow-xl">
+        <div className="relative h-[600px] w-[400px] overflow-hidden rounded-3xl shadow-xl mr-16">
           <Image
-            src="/flyer.jpg"
+            src={flayer}
             alt="Flyer de campaña"
             fill
             className="object-cover"

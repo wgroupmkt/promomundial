@@ -3,8 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
-import logocampmundial from '../../public/logocampmundial.png'
+import logomundialhora from '../../public/logomundialhori.png'
 import logowolfmundial from '../../public/logowolfmundial.png'
 
 export default function Header() {
@@ -27,7 +26,7 @@ export default function Header() {
             </div>
             <div>
           <Image  
-            src={logocampmundial}
+            src={logomundialhora}
             alt="Logo Campaña Mundial"
             width={100}
             height={60}

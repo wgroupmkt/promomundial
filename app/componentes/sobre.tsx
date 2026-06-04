@@ -21,13 +21,18 @@ export default function CampaignMessage() {
         {/* Video */}
         <div className="overflow-hidden rounded-3xl shadow-xl">
           <video
-            className="aspect-video w-full"
-            controls
-            poster="/poster.jpg"
-          >
-            <source src="/campania.mp4" type="video/mp4" />
-            Tu navegador no soporta videos.
-          </video>
+             className="w-full"
+             autoPlay
+             muted
+             loop
+             playsInline
+           >
+             <source
+               src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1780501774/cambo_zccyfe.mp4"
+               type="video/mp4"
+             />
+             Tu navegador no soporta videos.
+           </video>
         </div>
 
       </div>
