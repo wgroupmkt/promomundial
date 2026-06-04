@@ -23,7 +23,7 @@ export default function FlyerGallery() {
   }, [])
 
   return (
-     <section className="flex items-center justify-center w-full py-16">
+     <section className="flex items-center justify-center w-full py-16" id="promo">
   <div className="mx-auto flex flex-col items-center gap-8 px-6 lg:flex-row lg:justify-center">
 
     {/* Flyer */}
