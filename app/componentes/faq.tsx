@@ -26,11 +26,12 @@ const faqs = [
 ]
 
 export default function Faqs() {
-  const [openIndex, setOpenIndex] = useState(null)
+    const [openIndex, setOpenIndex] = useState<number | null>(null)
 
-  const toggleFaq = (index) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+    const toggleFaq = (index: number) => {
+          setOpenIndex(openIndex === index ? null : index)
+    }
+  
 
   return (
     <section className="w-full py-16">
