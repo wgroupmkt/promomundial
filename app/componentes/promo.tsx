@@ -23,44 +23,42 @@ export default function FlyerGallery() {
   }, [])
 
   return (
-    <section className="w-full py-16">
-      <div className="mx-auto flex flex-wrap justify-center gap-8 px-6">
+     <section className="flex items-center justify-center w-full py-16">
+  <div className="mx-auto flex flex-col items-center gap-8 px-6 lg:flex-row lg:justify-center">
 
-        {/* Flyer */}
-        <div className="relative h-[600px] w-[400px] overflow-hidden rounded-3xl shadow-xl mr-16">
-          <Image
-            src={flayer}
-            alt="Flyer de campaña"
-            fill
-            className="object-cover"
+    {/* Flyer */}
+    <div className="relative h-[500px] w-[320px] overflow-hidden rounded-3xl shadow-xl lg:h-[600px] lg:w-[400px]">
+      <Image
+        src={flayer}
+        alt="Flyer de campaña"
+        fill
+        className="object-cover"
+      />
+    </div>
+
+    {/* Slider */}
+    <div className="relative h-[500px] w-[320px] overflow-hidden rounded-3xl shadow-xl lg:h-[600px] lg:w-[400px]">
+      <Image
+        src={images[current]}
+        alt={`Foto ${current + 1}`}
+        fill
+        className="object-cover transition-all duration-500"
+      />
+
+      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 rounded-full bg-white/80 px-4 py-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`h-3 w-3 rounded-full ${
+              current === index ? 'bg-black' : 'bg-gray-300'
+            }`}
           />
-        </div>
-
-        {/* Slider */}
-        <div className="relative h-[600px] w-[400px] overflow-hidden rounded-3xl shadow-xl">
-          <Image
-            src={images[current]}
-            alt={`Foto ${current + 1}`}
-            fill
-            className="object-cover transition-all duration-500"
-          />
-
-          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 rounded-full bg-white/80 px-4 py-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`h-3 w-3 rounded-full ${
-                  current === index
-                    ? 'bg-black'
-                    : 'bg-gray-300'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-
+        ))}
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
   )
 }

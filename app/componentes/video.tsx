@@ -1,10 +1,10 @@
 export default function CampaignVideo() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-12">
       <div className="mx-auto max-w-6xl px-6">
         <div className="overflow-hidden rounded-3xl shadow-2xl">
            <video
-             className="w-full"
+             className="w-full h-[500px] object-cover"
              autoPlay
              muted
              loop

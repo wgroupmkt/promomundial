@@ -52,7 +52,7 @@ export default function ContactForm() {
     <section className="py-16">
       <div className="mx-auto max-w-2xl px-6">
         <h2 className="mb-8 text-center text-4xl font-bold">
-          Contacto
+          Envianos un Mensaje
         </h2>
 
         <form

@@ -10,11 +10,7 @@ export default function CampaignMessage() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Trabajamos para construir un futuro mejor para todos.
-            Creemos en la participación, la transparencia y el
-            desarrollo de proyectos que generen oportunidades reales
-            para la comunidad. Te invitamos a conocer más sobre
-            nuestras propuestas y objetivos.
+           En Wolf Travel llevamos más de 11 años acompañando a miles de estudiantes en una de las experiencias más importantes de su vida: el viaje de egresados. Somos una empresa líder del interior del país, especializada en crear experiencias únicas, seguras y memorables, combinando diversión, organización y acompañamiento profesional. Mientras los estudiantes disfrutan momentos inolvidables, las familias cuentan con la tranquilidad de estar respaldadas por un equipo comprometido en cada etapa del viaje.
           </p>
         </div>
 
