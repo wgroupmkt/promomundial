@@ -50,7 +50,7 @@ export default function ContactForm() {
 
   return (
     <section className="py-16 m-5" id="contacto">
-      <div className="mx-auto max-w-2xl px-6 border rounded-[20px] p-10 bg-[#333366]">
+      <div className="mx-auto max-w-2xl rounded-[20px] border bg-[#333366] p-10 shadow-[0_20px_60px_rgba(51,51,102,0.35)]">
         <h2 className="mb-8 text-center text-4xl font-bold text-white">
           Envianos un Mensaje
         </h2>
