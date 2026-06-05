@@ -4,24 +4,39 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: '¿Cuál es el principal objetivo de la campaña?',
+    question: '¿En qué consiste la promo? ',
     answer:
-      'Trabajar en propuestas concretas que mejoren la calidad de vida de los vecinos y promuevan el desarrollo de la comunidad.',
+      'Si Argentina gana la Copa del Mundo, los pasajeros inscriptos en la Promo 2028 de Wolf Travel acceden a un 50% de descuento en su viaje de egresados a Camboriú. ',
   },
   {
-    question: '¿Cómo puedo participar?',
+    question: '¿Quiénes pueden acceder al beneficio? ',
     answer:
-      'Puedes participar asistiendo a reuniones, eventos, actividades comunitarias o contactándonos a través de nuestros canales oficiales.',
+      'Participan todos los alumnos que se encuentren inscriptos a la Promo 2028 de Wolf Travel y cumplan con las condiciones de la campaña. ',
   },
   {
-    question: '¿Dónde puedo conocer las propuestas completas?',
+    question: '¿Tengo que pagar algo para participar? ',
     answer:
-      'Las propuestas estarán disponibles en nuestras redes sociales, materiales informativos y eventos de campaña.',
+      'Sí. Para acceder al beneficio es necesario estar correctamente inscripto en Wolf Travel según las condiciones comerciales vigentes.',
   },
   {
-    question: '¿Cómo puedo comunicarme con ustedes?',
+    question: '¿Qué pasa si Argentina no gana?  ',
     answer:
-      'Puedes hacerlo mediante el formulario de contacto, redes sociales o los medios de comunicación publicados en el sitio.',
+      'La promo queda sujeta a la condición establecida: el beneficio del 50% se activa únicamente si Argentina gana la Copa del Mundo.',
+  },
+  {
+    question: '¿El descuento es sobre cualquier viaje?',
+    answer:
+      'El beneficio aplica sobre el viaje de egresados contratado dentro de la Promo 2028 de Wolf Travel, según condiciones de la campaña.',
+  },
+   {
+    question: '¿Puedo acceder si ya estoy inscripto? ',
+    answer:
+      '¡Sí! Si tu inscripción corresponde a la Promo 2028 y cumple con los requisitos de la campaña, participás automáticamente.',
+  },
+   {
+    question: '¿Dónde puedo consultar las bases y condiciones?',
+    answer:
+      'Podés consultar todas las condiciones de la campaña en esta misma página o comunicándote con el equipo de Wolf Travel.',
   },
 ]
 

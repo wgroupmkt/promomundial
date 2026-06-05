@@ -27,7 +27,7 @@ export default function Header() {
     <Image
       src={logomundialhora}
       alt="Logo Campaña Mundial"
-      width={100}
+      width={80}
       height={60}
       priority
     />
@@ -42,7 +42,7 @@ export default function Header() {
 
   <button
     onClick={() => setOpen(!open)}
-    className="justify-self-end text-3xl text-white md:hidden mr-6"
+    className="justify-self-end text-3xl text-white md:hidden mr-8"
   >
     ☰
   </button>

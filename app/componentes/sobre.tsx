@@ -17,7 +17,7 @@ export default function CampaignMessage() {
         {/* Video */}
         <div className="overflow-hidden rounded-3xl shadow-xl">
           <video
-             className="w-full"
+             className="w-full h-[450px] object-cover"
              autoPlay
              muted
              loop

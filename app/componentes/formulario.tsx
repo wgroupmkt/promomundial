@@ -49,9 +49,9 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-16" id="contacto">
-      <div className="mx-auto max-w-2xl px-6">
-        <h2 className="mb-8 text-center text-4xl font-bold">
+    <section className="py-16 m-5" id="contacto">
+      <div className="mx-auto max-w-2xl px-6 border rounded-[20px] p-10 bg-[#333366]">
+        <h2 className="mb-8 text-center text-4xl font-bold text-white">
           Envianos un Mensaje
         </h2>
 
@@ -72,7 +72,7 @@ export default function ContactForm() {
                 nombre: e.target.value,
               })
             }
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border p-4 bg-white"
           />
 
           <input
@@ -88,7 +88,7 @@ export default function ContactForm() {
                 email: e.target.value,
               })
             }
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border p-4 bg-white"
           />
 
           <textarea
@@ -104,7 +104,7 @@ export default function ContactForm() {
                 mensaje: e.target.value,
               })
             }
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border p-4 bg-white"
           />
 
           <button

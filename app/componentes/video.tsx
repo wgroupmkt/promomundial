@@ -4,14 +4,14 @@ export default function CampaignVideo() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="overflow-hidden rounded-3xl shadow-2xl">
            <video
-             className="w-full h-[500px] object-cover"
+             className="lg:w-[100%] h-[500px] object-cover"
              autoPlay
              muted
              loop
              playsInline
            >
              <source
-               src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1780501774/cambo_zccyfe.mp4"
+               src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1780502032/video_qinekw.mp4"
                type="video/mp4"
              />
              Tu navegador no soporta videos.
