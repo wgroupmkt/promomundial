@@ -110,7 +110,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-xl bg-black py-4 text-white"
+            className="rounded-xl py-4 text-white bg-gray-500 w-full cursor-pointer"
           >
             {loading ? 'Enviando...' : 'Enviar'}
           </button>
