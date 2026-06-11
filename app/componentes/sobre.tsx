@@ -17,11 +17,12 @@ export default function CampaignMessage() {
         {/* Video */}
         <div className="overflow-hidden rounded-3xl shadow-xl">
           <video
-             className="w-full h-[450px] object-cover"
-             autoPlay
-             muted
-             loop
-             playsInline
+              className="lg:w-[100%] h-[500px] object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
            >
              <source
                src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1780501774/cambo_zccyfe.mp4"
