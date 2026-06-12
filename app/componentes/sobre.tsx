@@ -25,7 +25,7 @@ export default function CampaignMessage() {
               controls
            >
              <source
-               src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1780501774/cambo_zccyfe.mp4"
+               src="https://res.cloudinary.com/dx2pj0vkm/video/upload/v1781267808/Camboriu_dhouag.mp4?_s=public-apps"
                type="video/mp4"
              />
              Tu navegador no soporta videos.
