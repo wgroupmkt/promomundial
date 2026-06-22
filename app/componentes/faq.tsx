@@ -4,6 +4,11 @@ import { useState } from 'react'
 
 const faqs = [
   {
+    question: '¿Hasta cuando tengo tiempo de inscribirme?',
+    answer:
+      'Tenés tiempo hasta que termine la fase de grupos, es decir, hasta el 27 de junio del 2026 o hasta agotar los 5000 cupos disponibles.',
+  },
+  {
     question: '¿En qué consiste la promo? ',
     answer:
       'Si Argentina gana la Copa del Mundo, los pasajeros inscriptos en la Promo 2028 de Wolf Travel acceden a un 50% de descuento en su viaje de egresados a Camboriú. ',
@@ -14,9 +19,9 @@ const faqs = [
       'Participan todos los alumnos que se encuentren inscriptos a la Promo 2028 de Wolf Travel y cumplan con las condiciones de la campaña. ',
   },
   {
-    question: '¿Tengo que pagar algo para participar? ',
+    question: '¿Cuál es el valor de la inscripción?',
     answer:
-      'Sí. Para acceder al beneficio es necesario estar correctamente inscripto en Wolf Travel según las condiciones comerciales vigentes.',
+      'Para acceder al beneficio es necesario estar correctamente inscripto en Wolf Travel según las condiciones comerciales vigentes. La inscripción tiene un valor de 300USD, monto que luego será tenido en cuenta dentro del valor total de tu viaje.',
   },
   {
     question: '¿Qué pasa si Argentina no gana?  ',
@@ -38,6 +43,7 @@ const faqs = [
     answer:
       'Podés consultar todas las condiciones de la campaña en esta misma página o comunicándote con el equipo de Wolf Travel.',
   },
+
 ]
 
 export default function Faqs() {
