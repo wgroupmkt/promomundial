@@ -21,7 +21,7 @@ const faqs = [
   {
     question: '¿Cuál es el valor de la inscripción?',
     answer:
-      'Para acceder al beneficio es necesario estar correctamente inscripto en Wolf Travel según las condiciones comerciales vigentes. La inscripción tiene un valor de 300USD, monto que luego será tenido en cuenta dentro del valor total de tu viaje.',
+      'Quienes quieran acceder al beneficio deberán estar correctamente inscriptos en Wolf Travel según las condiciones comerciales vigentes. Para esto, tenés que abonar 300USD, lo cual equivale a tu inscrpción + un adelanto de cuotas (descontado del valor total de tu viaje)',
   },
   {
     question: '¿Qué pasa si Argentina no gana?  ',
